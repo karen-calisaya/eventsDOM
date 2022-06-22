@@ -20,6 +20,8 @@ window.onload = function(){
         fondo.classList.add('fondo');
         enlace.style.color = '#E51B3E';
     }
+
+    /* seleccioné todas las p */
     console.log(destacado);
     for(let i = 0 ; i < destacado.length; i++){
         if(i % 2 == 0){
@@ -28,7 +30,28 @@ window.onload = function(){
             destacado[i].classList.add('destacadoImpar');
         }
     }
-    
-
     container.style.display = 'block';
+
+    let menu = document.querySelector('#menu')
+    let logo = document.querySelector('.logoDH')
+    logo.addEventListener('click', () => {
+        menu.classList.toggle('menu')
+    })
+
 }
+
+
+/* id menu.. veamos donde esta el elemento menu
+capturemos el id menu
+podemos usar el metodo classList
+ let $menu = document.querySelector('#menu');
+    let $logo = document.querySelector('.logoDH');
+
+    $logo.addEventListener('click', () => {
+        $menu.classList.toggle('mostrar')
+    })
+
+    $menu.addEventListener('mouseout', () => {
+        $menu.classList.remove('mostrar')
+    })
+*/

@@ -7,6 +7,11 @@ window.onload = function(){
     article.classList.add('fondoTransparente');
     formulario.classList.add('fondoCRUD');
 
-
+    titulo.addEventListener('mouseover', () => {
+        titulo.style.color = "red"
+    })
+    titulo.addEventListener('mouseout', () => {
+        titulo.style.color = "black"
+    })
 
 }
