@@ -32,21 +32,16 @@ window.onload = function(){
     }
     container.style.display = 'block';
 
-    let menu = document.querySelector('#menu')
-    let logo = document.querySelector('.logoDH')
-    logo.addEventListener('click', () => {
-        menu.classList.toggle('menu')
-    })
-
-}
 
 
-/* id menu.. veamos donde esta el elemento menu
-capturemos el id menu
-podemos usar el metodo classList
- let $menu = document.querySelector('#menu');
-    let $logo = document.querySelector('.logoDH');
-
+    
+    /* id menu.. veamos donde esta el elemento menu
+    capturemos el id menu
+    podemos usar el metodo classList y toggle, si tiene la clase se
+    la agrega, sino se la quita, luego la remueve
+    */
+    let $menu = document.querySelector('#menu')
+    let $logo = document.querySelector('.logoDH')
     $logo.addEventListener('click', () => {
         $menu.classList.toggle('mostrar')
     })
@@ -54,4 +49,7 @@ podemos usar el metodo classList
     $menu.addEventListener('mouseout', () => {
         $menu.classList.remove('mostrar')
     })
-*/
+
+}
+
+
